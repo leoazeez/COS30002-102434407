@@ -36,7 +36,7 @@ while running and alive:
         # Check for change state
         if hunger > 7:
             current_state = 'eating'
-        if tired > 16:
+        if tired > 5:
             current_state = 'sleeping'
             
     # Eating: reduces hunger, still gets tired
@@ -46,9 +46,9 @@ while running and alive:
         tired += 1
         hunger -= 1
         # Check for change state
-        if hunger < 8:
+        if hunger < 7:
             current_state = 'awake'
-        if tired > 16:
+        if tired > 5:
             current_state = 'sleeping'
             
     # check for broken ... :(
