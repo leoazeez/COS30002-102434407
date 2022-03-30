@@ -2,7 +2,9 @@
 
 ## Who Am I?
 
-TODO: Add your name, student id, and easy email link here, formatted as a unordered list.
+* Abdul Azeez
+* 102434407
+* 102434407@student.swin.edu.au
 
 ## Purpose
 
