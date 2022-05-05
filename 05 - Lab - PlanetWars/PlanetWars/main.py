@@ -12,11 +12,14 @@ Updated 2015
 
 from planet_wars import PlanetWars
 
-from pyglet import window, clock, app, resource, sprite
-from pyglet.window import key
-from pyglet.gl import *
-from pyglet.text import Label
 import pyglet
+  
+# from pyglet import window, clock, app, resource, sprite
+# from pyglet.window import key
+# from pyglet.gl import *
+# from pyglet.text import Label
+
+
 
 COLOR_NAMES = {
     'BLACK':  (0.0, 0.0, 0.0, 1),
@@ -61,7 +64,7 @@ PLANET_FACTOR = 0.05
 DISPLAY = True
 
 IMAGES = {
-    'background': 'images/space.jpg',
+    'background': 'images/space_.jpg',
 }
 
 
@@ -138,7 +141,7 @@ class PlanetWarsScreenAdapter(object):
     def sync_all(self, view_id=0, label_type='num_ships'):
         # todo: only need to update label values and owner colour details of planets
         # recache all planets/fleets
-        if view_id is 0:
+        if view_id == 0:
             planets = self.game.planets
             fleets = self.game.fleets
         else:
@@ -347,6 +350,16 @@ class PlanetWarsWindow(window.Window):
 if __name__ == '__main__':
     gamestate = open('./maps/map5.txt').read()
     players = ['Blanko', 'OneMove']
-    window = PlanetWarsWindow(gamestate=gamestate, players=players, max_game_length=500)
+    players2 = ['OneMove','Rando']
+    players3 = ['OneMove','MyNewBot']
+    players4 = ['OneMove','BestTarget']
+    players5 = ['OneMove','WorstTarget']
+    players6 = ['OneMove','WorstTarget','BestTarget']
+    players7 = ['WorstTarget', 'MyBot']
+    # window = PlanetWarsWindow(gamestate=gamestate, players=players, max_game_length=500)
+    # app.run()
+    # window.game.logger.flush()
+
+    window = PlanetWarsWindow(gamestate=gamestate, players=players7, max_game_length=500)
     app.run()
     window.game.logger.flush()
