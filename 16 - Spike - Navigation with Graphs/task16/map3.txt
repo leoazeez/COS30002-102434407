@@ -1,0 +1,12 @@
+12 10
+0 119
+X X X X X X X X X X . .
+X X X . . . . . . . X X
+~ ~ X ~ . . . . . . X X
+~ ~ X . . . . ~ X X X X
+~ m m m . . . . . . X X
+. . . . X X m ~ X X X X
+~ ~ X . . . . . . . X X
+. ~ X ~ . . . . X . X X
+. . X m m m . X X X X X
+. m m m . . . . . . X X
